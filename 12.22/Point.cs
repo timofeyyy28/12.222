@@ -1,9 +1,8 @@
-﻿
-using ClassLibraryLabor10;
+﻿using ClassLibraryLabor10;
 
 namespace _12._22
 {
-    internal class Point<T> where T : IInit, ICloneable, new()
+    public class Point<T> where T : IInit, ICloneable, new()
     {
         public T Data { get; set; }
         public Point<T>? Next { get; set; }
@@ -36,5 +35,6 @@ namespace _12._22
         {
             return Data == null ? "" : Data.ToString();
         }
+
     }
 }

@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="ClassLibrary10">
-      <HintPath>..\..\ClassLibrary10\ClassLibrary10\bin\Debug\net8.0\ClassLibrary10.dll</HintPath>
+    <Reference Include="ClassLibraryLabor10">
+      <HintPath>..\..\..\..\OneDrive\Рабочий стол\ClassLibraryLabor10\bin\Debug\ClassLibraryLabor10.dll</HintPath>
     </Reference>
   </ItemGroup>
 

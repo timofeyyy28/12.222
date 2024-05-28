@@ -2,7 +2,7 @@
 
 namespace _12._22
 {
-    internal class MyHashTable<T> where T : IInit, ICloneable, new()
+    public class MyHashTable<T> where T : IInit, ICloneable, new()
     {
         Point<T>[] table;
         public int Capacity => table.Length;
@@ -47,18 +47,7 @@ namespace _12._22
             }
         }
 
-        public void AddRandomItems(int elementsCount)
-        {
-            Random random = new Random();
-
-            for (int i = 0; i < elementsCount; i++)
-            {
-                T newItem = new T();
-                newItem.RandomInit();
-
-                AddPoint(newItem);
-            }
-        }
+        
 
         public void PrintTable()
         {
