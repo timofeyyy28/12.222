@@ -111,13 +111,13 @@ namespace _12._22
             int index = GetIndex(data);
             if (table == null)
                 throw new Exception("empty table");
-            if (table[index] == null) //цепочка пустая, элемента
+            if (table[index] == null) 
                 return false;
-            if (table[index].Data.Equals(data)) //попали на нужный
+            if (table[index].Data.Equals(data)) 
                 return true;
             else
             {
-                Point<T> current = table[index];//идем по цепочке
+                Point<T> current = table[index];
                 while (current != null)
                 {
                     if (current.Data.Equals(data))
